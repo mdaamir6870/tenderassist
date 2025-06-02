@@ -1,37 +1,81 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   background: #fff;
   color: #333;
 }
+
 header.hero {
-  background: #ff6a00;
+  background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158') no-repeat center center/cover;
+  height: 90vh;
+  position: relative;
   color: white;
   text-align: center;
-  padding: 2em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+header .overlay {
+  background-color: rgba(0,0,0,0.5);
+  padding: 2rem;
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
 .btn {
   background: #fff;
   color: #ff6a00;
-  padding: 0.5em 1em;
+  padding: 10px 20px;
+  margin: 0 10px;
   text-decoration: none;
-  margin: 0.5em;
-  border-radius: 5px;
-  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
 }
+
 .btn.secondary {
-  background: #333;
-  color: white;
-}
-section {
-  padding: 1em;
-  border-bottom: 1px solid #ddd;
-}
-footer {
   background: #222;
   color: white;
+}
+
+section {
+  padding: 3rem 1.5rem;
   text-align: center;
-  padding: 1em;
+}
+
+.how-it-works ul,
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.how-it-works ul li,
+.services ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.industries .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.industries .grid div {
+  background: #f3f3f3;
+  padding: 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
